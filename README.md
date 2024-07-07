@@ -16,18 +16,18 @@ We are 6 McGill University students from the Faculty of Engineering
 
 ## Overview Tables
 ### Project
-| NAME                   | ROLE |  SPRINT 1 | SPRINT 2 | SPRINT 3 | SPRINT 4 |
-|------------------------|------|-----------|----------|----------|----------|
-| William Wang       | Documentation Lead | 20     |    30     |    0      |    0      |
-| Li Yang Lei       | Project Manager | 18    |    40     |    0      |    0      |
-| Kevin-Ruikai Li | Software Developer | 16      |    15     |    0      |    0      |
-| Vlad Arama | Software Developer | 16    |    25     |    0      |    0      |
-| Krasimir Kirov | Testing Lead |   17   |    17    |    0      |    0      |
-| Jatin Patel | Software Developer | 16     |    28     |    0      |    0      |
+| NAME                   | ROLE |  SPRINT 1 | SPRINT 2 | SPRINT 3 |
+|------------------------|------|-----------|----------|----------|
+| William Wang       | Documentation Lead | 20     |    30     |    30      |
+| Li Yang Lei       | Project Manager | 18    |    40     |    40      |
+| Kevin-Ruikai Li | Software Developer | 16      |    15     |    25      |
+| Vlad Arama | Software Developer | 16    |    25     |    20      |
+| Krasimir Kirov | Testing Lead |   17   |    22    |    25      |
+| Jatin Patel | Software Developer | 16     |    28     |    28      |
 
 ### Deliverable 1
 
-The project report for this deliverable can be found [here](https://github.com/McGill-ECSE321-Winter2024/project-group-6/wiki).
+The project report for this deliverable can be found [here](https://github.com/McGill-ECSE321-Winter2024/project-group-6/wiki/D1:-Detailed-Use-Case-Specifications).
 
 | Name | Contributions | Hours |
 | ------------- | ------------- | ------------- |
@@ -40,7 +40,7 @@ The project report for this deliverable can be found [here](https://github.com/M
 
 ### Deliverable 2
 
-The project report for this deliverable can be found [here]().
+The project report for this deliverable can be found [here](https://github.com/McGill-ECSE321-Winter2024/project-group-6/wiki/D2:-Key-Decisions).
 
 | Name | Contributions | Hours |
 | ------------- | ------------- | ------------- |
@@ -48,32 +48,18 @@ The project report for this deliverable can be found [here]().
 | Li Yang Lei | <ul><li>Billing Class Service</li><li>Billing Class Controller</li><li>Documentation</li><li>Billing Class Service Tests</li><li>Billing Class Integration Tests</li><li>Fitness Class Service Refactoring</li><li>Fitness Class Controller Refactoring</li><li>Fitness Class Service Tests</li><li>Documentation</li></ul> | 40 |
 | Kevin-Ruikai Li | <ul><li>Fitness Class Service</li><li>Fitness Class REST Controller</li><li>Documentation</li><li>Fitness Class unit tests for service layer</li><li>Integration tests for Fitness Class REST Controller</li></ul> | 15 |
 | Vlad Arama | <ul><li>Registration Service</li> <li>Registration REST Controller</li><li>Registration Unit Tests for service layer</li><li>Integration tests for Registration REST Controller</li><li>Reviewing Pull Requests and Testing the Changes</li><li>GitHub Project Management (Issues, PRs, Wikis)</li><li>Documentation</li></ul> | 25 |
-| Krasimir Kirov | <ul><li>Customer Service</li><li>Customer REST Controller</li><li>Customer Unit Tests for service layer</li><li> Integration tests for Customer REST Controller</li><li>Testing Documentation (Test Plan, Structure and Scope) for Deliverable 2</li></ul> | 17 |
+| Krasimir Kirov | <ul><li>Customer Service</li><li>Customer REST Controller</li><li>Customer Unit Tests for service layer</li><li> Integration tests for Customer REST Controller</li><li>Testing Documentation (Test Plan, Structure and Scope) for Deliverable 2</li></ul> | 22 |
 | Jatin Patel | <ul><li>Instructor Service</li><li>Instructor REST Controller</li><li>Instructor Unit Tests for service layer</li><li> Integration tests for Instructor REST Controller</li><li>Testing Controller REST endpoint documentation for Deliverable 2</li><li>Owner Service</li><li>Owner REST Controller</li><li>Owner Unit Tests for service layer</li><li> Integration tests for Owner REST Controller</li></ul> | 28 |
 
 ### Deliverable 3
 
-The project report for this deliverable can be found [here]().
+The project report for this deliverable can be found [here](https://github.com/McGill-ECSE321-Winter2024/project-group-6/wiki/D3:-Project-Setup-and-Deployment-Documentation).
 
 | Name | Contributions | Hours |
 | ------------- | ------------- | ------------- |
-| William Wang | |  |
-| Li Yang Lei |  |  |
-| Kevin-Ruikai Li |  | |
-| Vlad Arama |  |  |
-| Krasimir Kirov |  |  |
-| Jatin Patel |  |  |
-
-
-### Deliverable 4
-
-The project report for this deliverable can be found [here]().
-
-| Name | Contributions | Hours |
-| ------------- | ------------- | ------------- |
-| William Wang | |  |
-| Li Yang Lei |  |  |
-| Kevin-Ruikai Li |  | |
-| Vlad Arama |  |  |
-| Krasimir Kirov |  |  |
-| Jatin Patel |  |  |
+| William Wang | <li>Setup frontend Vue 3 application using Vite, Tailwind CSS, and Pinia</li><li>Implemented Homepage, Navbar, and FitnessClassCard</li><li>Handled conditional page routing with user role</li><li>Developed Axios template for team</li><li>Designed backend improvements</li><li>Added calls to Unsplash API for auto-generated images</li> | 30 |
+| Li Yang Lei | <li>Implemented the frontend authentication logic for all types of users</li> <li>Implemented the frontend of accounts detail view for three types of users</li> <li>Implemented the frontend of create customer account view</li> <li>Implemented the frontend of create instructor account view</li> <li>Implemented the frontend of edit password view for all types of users</li> <li>Implemented the frontend of edit billing view for customers</li> <li>Implemented the frontend of login view</li> <li>Implemented the frontend of signup view</li> <li>Fixed billing service and its respective service test</li>  | 40 |
+| Kevin-Ruikai Li | <ul><li>Implemented the frontend for the Sessions List view</li><li>Implemented the frontend for Session Details</li><li>Fixed service tests for Fitness Class</li></ul> | 25 |
+| Vlad Arama | <ul><li>Implemented Registration View Frontend</li><li>Improved Registration Controller</li><li>Reviewed multiple pull requests</li><li>GitHub issue tracking and project management</li><li>Prepared Owner Demo for Presentation</li></ul> | 20 |
+| Krasimir Kirov | <ul><li>Responsible of frontend of create new session view</li><li>Responsible of frontend of propose new fitness class view</li><li>Responsible of frontend of sport center information view</li><li>Fixed customer services</li><li>Fixed customer integrations tests</li><li>Backend and Frontend Setup Documentation for Deliverable 3</li></ul>  | 25 |
+| Jatin Patel | <ul><li>Implemented Instructor Management View</li><li>Implemented Fitness Class Management View</li><li>Updated Instructor/Owner Backend (Controller, Service class) to support frontend requirements</li><li>Implemented login functionality to backend</li><li>Updated Integration tests for owner and instructor</li><li>Prepared presentation (slides, key features) and contributed to presentation planning meetings</li></ul>  | 28 |

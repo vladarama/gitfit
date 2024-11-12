@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, ref, onMounted } from "vue";
 import { useHomeStore } from "@/stores/fitnessClassStore";
 
 const props = defineProps({
@@ -7,6 +7,32 @@ const props = defineProps({
     type: Object,
     required: true,
   },
+});
+
+const imageUrl = ref("");
+
+async function fetchImage() {
+  try {
+    const response = await fetch(
+      `https://api.pexels.com/v1/search?query=${encodeURIComponent(
+        props.fitnessClass.name
+      )}+fitness&per_page=1`,
+      {
+        headers: {
+          Authorization: import.meta.env.VITE_PEXELS_API_KEY,
+        },
+      }
+    );
+    const data = await response.json();
+    imageUrl.value = data.photos[0]?.src.large || "/default-fitness-image.jpg";
+  } catch (error) {
+    console.error("Error fetching image:", error);
+    imageUrl.value = "/default-fitness-image.jpg";
+  }
+}
+
+onMounted(() => {
+  fetchImage();
 });
 
 const deleteCourseHandler = async () => {
@@ -21,7 +47,7 @@ const deleteCourseHandler = async () => {
   >
     <a href="#" class="w-full block h-full">
       <img
-        :src="'https://api.pexels.com/v1/search?query=' + fitnessClass.name"
+        :src="imageUrl"
         alt="fitness class"
         class="max-h-40 w-full object-cover rounded-t-lg transform transition-transform duration-500 hover:scale-110"
       />

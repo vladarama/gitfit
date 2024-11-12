@@ -1,7 +1,13 @@
 import { data } from "autoprefixer";
 import axios from "axios";
 
-const backendUrl = "https://www.gitfit.ca/api";
+const backendUrl =
+  "http://" +
+  import.meta.env.VITE_APP_BACKEND_HOST +
+  ":" +
+  import.meta.env.VITE_APP_BACKEND_PORT +
+  "/api";
+
 const AXIOS = axios.create({
   baseURL: backendUrl,
 });
